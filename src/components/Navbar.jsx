@@ -2,6 +2,7 @@ import { Avatar } from "./Avatar";
 import { GiLindenLeaf } from "react-icons/gi";
 import { Link } from 'react-router-dom'
 
+
 const Navbar = () =>{
     return(
         <div className="flex justify-between transparent py-3  opacity-90 px-96 ">
