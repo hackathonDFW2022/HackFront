@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () =>{
     return(
-        <div className="flex justify-between bg-green-900 p-3 rounded-2xl opacity-90">
+        <div className="flex justify-between bg-green-900 p-3 rounded-2xl opacity-90 shadow">
             <div className="flex gap-4 items-center">
                 <div className="text-green-50 text-[2rem]"><GiLindenLeaf/></div>
             </div>
