@@ -3,6 +3,7 @@
 @tailwind utilities;
 :root {
  
+  
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -10,3 +11,7 @@
   -webkit-text-size-adjust: 100%;
 }
 
+#root{
+  margin: 0 !important;
+  padding: 0 !important;
+}
