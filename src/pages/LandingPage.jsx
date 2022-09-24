@@ -7,7 +7,7 @@ import Anchor from "../components/Anchor";
 const LandingPage = () => {
     return(
         <>
-            <Navbar/>
+            
             <div className="">
                 <div className="flex mx-96 justify-center pt-12">
                     <div className="w-6/12 flex flex-col justify-center">
@@ -26,6 +26,7 @@ const LandingPage = () => {
             <div className="bg-green-100">
                 text
             </div>
+
         </>
     )
 }
