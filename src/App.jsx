@@ -8,7 +8,7 @@ function App() {
   
 
   return (
-     <main className='min-h-screen max-h-fit bg-green-900'>
+     <main className='min-h-screen max-h-fit bg-slate-50'>
       <Routes>
         <Route path='/' element={<LandingPage/>}/>
       </Routes>
