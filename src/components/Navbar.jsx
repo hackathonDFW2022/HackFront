@@ -11,7 +11,7 @@ const Navbar = () =>{
                     <h2 className="text-gray-900 text-2xl font-bold">Green Beings</h2>
                 </div>
             </div>
-            <div className="flex gap-8 items-center text-green-300 text-1xl">
+            <div className="flex gap-8 items-center text-green-700 text-1xl">
             <Link to="/form">Green Test</Link>
             <Link to="/">About</Link>
             <Link to="/dashboard">Dashboard</Link>
