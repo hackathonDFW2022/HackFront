@@ -2,16 +2,21 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import LandingPage from './pages/LandingPage'
 import {Route,Routes} from 'react-router-dom'
+import GreenForm from './pages/GreenForm'
+import Navbar from './components/Navbar'
 
 
 function App() {
   
 
   return (
-     <main className='min-h-screen max-h-fit bg-green-900'>
-      <Routes>
-        <Route path='/' element={<LandingPage/>}/>
-      </Routes>
+     <main className='min-h-screen max-h-fit bg-green-100'>
+        <Navbar/>
+        <Routes>
+          <Route path='/' element={<LandingPage/>}/>
+          <Route path='/form' element={<GreenForm />} />
+          <Route path='/dashboard' />
+        </Routes>
     </main>
   )
 }
