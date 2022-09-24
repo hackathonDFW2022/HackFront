@@ -4,14 +4,18 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () =>{
     return(
-        <div className="flex justify-between bg-green-900 p-3 rounded-2xl opacity-90 shadow">
+        <div className="flex justify-between transparent py-3  opacity-90 px-96 ">
             <div className="flex gap-4 items-center">
-                <div className="text-green-50 text-[2rem]"><GiLindenLeaf/></div>
+                <div className="text-green-900 flex items-center gap-2">
+                    <GiLindenLeaf className="text-3xl"/>
+                    <h2 className="text-gray-900 text-2xl font-bold">Green Beings</h2>
+                </div>
             </div>
             <div className="flex gap-8 items-center text-green-300 text-1xl">
             <Link to="/form">Green Test</Link>
             <Link to="/">About</Link>
             <Link to="/dashboard">Dashboard</Link>
+
             <a href="#"><Avatar/></a>    
             </div>
         </div>
