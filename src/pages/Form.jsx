@@ -2,11 +2,12 @@ import React from 'react'
 
 const Form = () => {
   return (
-    <div>
+    <div className='w-4/5 bg-slate-100'>
       <form action="">
-        <div className='relative z-0 mb-6 w-full group'>
-            <input />
+        <div className='flex z-0 mb-6 w-full group'>
+            <input className='' />
             <label />
+
         </div>
         <div>
 
