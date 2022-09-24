@@ -1,19 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import LandingPage from './pages/LandingPage'
+import {Route,Routes} from 'react-router-dom'
+import GreenForm from './pages/GreenForm'
 import Navbar from './components/Navbar'
-import LineChart from './components/LineChart'
+
+
 function App() {
   
 
   return (
-    <div className="App">
-      <Navbar/>
-      <div>
-        <h3 className='text-3xl'>test</h3>
-        <LineChart />
-      </div>
-    </div>
+     <main className='min-h-screen max-h-fit bg-green-100'>
+        <Navbar/>
+        <Routes>
+          <Route path='/' element={<LandingPage/>}/>
+          <Route path='/form' element={<GreenForm />} />
+          <Route path='/dashboard' />
+        </Routes>
+    </main>
   )
 }
 

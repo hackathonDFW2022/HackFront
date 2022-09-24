@@ -1,12 +1,13 @@
 import React from 'react'
 
-const Form = () => {
+const GreenForm = () => {
   return (
-    <div>
+    <div className='w-4/5 bg-slate-100 flex-col mt-2'>
       <form action="">
         <div className='relative z-0 mb-6 w-full group'>
-            <input />
+            <input className='' />
             <label />
+
         </div>
         <div>
 
@@ -16,4 +17,4 @@ const Form = () => {
   )
 }
 
-export default Form
+export default GreenForm
