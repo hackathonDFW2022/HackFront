@@ -7,7 +7,7 @@ const Dashboard = () => {
   return (
 
     <>
-        <Card/>
+        
         <div className="border flex flex-wrap">
           <div className="w-4/12 border ">
             Results
