@@ -33,8 +33,8 @@ const LandingPage = () => {
                         <h1 className="text-green-800 font-bold text-5xl pb-4">Go Green</h1>
                         <p className="leading-6 text-green-700">Green Beings is dedicated to helping you do your part in preventing climate change. </p>
                         <div className="pt-5 flex gap-5">
-                            <Anchor text="Take the Test" location="#"/>
-                            <Anchor text="About us" location="#"/>
+                            <Anchor text="Take the Test" location="form"/>
+                            <Anchor text="About us" location="/"/>
                         </div>
                     </div>
                     <div className="w-6/12 flex justify-center items-center text-green-900 text-[20rem]">
