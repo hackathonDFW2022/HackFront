@@ -3,6 +3,7 @@ import Card from '../components/Card'
 import LineChart from '../components/LineChart'
 const Dashboard = () => {
   return (
+
     <>
         <Card/>
         <div className="border flex flex-wrap">
@@ -20,6 +21,7 @@ const Dashboard = () => {
           <div className="w-4/12 border ">other</div>
         </div>
     </>
+
   )
 }
 

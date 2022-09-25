@@ -40,7 +40,7 @@ export const data = {
     datasets: [
         {
             label: 'Carbon Emissions',
-            data: labels.map(() => faker.datatype.number({min: 0, max: 1000})),
+            data: labels.map(() => faker.datatype.number({min: 0, max: 100})),
             borderColor: 'green',
             backgroundColor: 'green',
         }
