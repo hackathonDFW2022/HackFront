@@ -48,6 +48,6 @@ export const data = {
 }
 export default function LineChart() {
   return(
-        <Line options={options} data={data} />
+        <Line options={options} data={data}/>
   )
 }
