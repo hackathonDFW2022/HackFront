@@ -1,6 +1,5 @@
 import React from 'react'
-import Card from '../components/Card'
-import LineChart from '../components/LineChart'
+
 
 import {BsLightbulb} from "react-icons/bs"
 const Dashboard = () => {
