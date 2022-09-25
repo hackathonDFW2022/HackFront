@@ -1,18 +1,22 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
+import Breakdown from '../components/Breakdown'
 import Guess from '../components/Guess'
 
 const Results = () => {
+  const nav = useNavigate()
   const [loading, setLoading] = useState(true)
   const [phase, setPhase] = useState(0)
 
   useEffect(() => {
+    setLoading(true)
     setTimeout(() => {
       setLoading(false)
-    }, 723)
+    }, 690)
   }, [phase])
 
   return (
+    
     <>
       <div className='flex flex-col items-center'>
         <div className='my-2 w-[85%] rounded bg-green-100 border-green-200 border-2 flex justify-center'>
@@ -22,9 +26,9 @@ const Results = () => {
               phase == 0 ? "the state of..." : "the city of..."
               }
             </h1> :
-            <h1 className='py-6 text-6xl font-semibold'>
-              Select your location
-            </h1>
+              <h1 className='py-6 text-6xl font-semibold'>
+                Your results
+              </h1>
           }
         </div>
         
@@ -39,6 +43,16 @@ const Results = () => {
         }
         {(!loading && phase == 0 ) && <Guess location={"Texas"} image={"https://images.pexels.com/photos/9102582/pexels-photo-9102582.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} />}
         {(!loading && phase == 1 ) && <Guess location={"Dallas"} image={"https://images.pexels.com/photos/45182/dallas-texas-skyline-dusk-45182.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"} />}
+        {(!loading && phase == 2 ) && <Breakdown />}
+        {(!loading && phase == 2 ) && <button
+                                        className='py-2.5 px-5 mr-2 mt-8 text-xl font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-green-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700'
+                                        onClick={() => {
+                                          nav("/dashboard")
+                                        }}
+                                      >
+                                        View Dashboard
+                                      </button>
+        }
         { phase <= 1 &&
           <div className='mt-16 rounded border-4 border-slate-300 px-16 py-4 bg-slate-100 flex-col flex '>
           <h3 className='text-3xl'>Are we correct?</h3>
