@@ -1,13 +1,11 @@
 import React from 'react'
 import LineChart from './LineChart'
 
-function Card() {
+function Card({component}) {
   return (
-    <div className="flex mt-2 justify-center">
-        <div className="max-w-10xl rounded overflow-hidden shadow-md">
+        <div className="min-w-fit rounded overflow-hidden shadow-md justify-center">
             <div className="font-bold text-xl mx-2 my-2">
-                <LineChart />
-            </div>
+                {component}
         </div>
     </div>
   )
