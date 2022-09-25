@@ -3,6 +3,7 @@ import {Route,Routes} from 'react-router-dom'
 import GreenForm from './pages/GreenForm'
 import Navbar from './components/Navbar'
 import Dashboard from './pages/Dashboard';
+import Results from './pages/Results';
 
 function App() {
   
@@ -14,6 +15,7 @@ function App() {
           <Route path='/' element={<LandingPage/>}/>
           <Route path='/form' element={<GreenForm />} />
           <Route path='/dashboard' element={<Dashboard />} />
+          <Route path='/results' element={<Results />}/>
         </Routes>
 
     </main>
