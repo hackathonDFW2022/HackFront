@@ -9,7 +9,7 @@ function App() {
 
   return (
 
-     <main className='min-h-screen max-h-fit bg-slate-50'>
+     <main className='min-h-screen max-h-fit bg-slate-50 '>
         <Navbar/>
         <Routes>
           <Route path='/' element={<LandingPage/>}/>
