@@ -8,8 +8,14 @@ const Dashboard = () => {
     <>
         
         <div className="border flex flex-wrap">
-          <div className="w-4/12 border ">
-            Results
+          <div className="w-4/12 flex flex-col items-center ">
+            <h1 className='text-2xl font-bold'>Results</h1>
+            <div className="flex justify-between items-center">
+              <div className="flex justify-center w-6/12 items-center">
+                <h3 className='text-green-700 text-9xl'>87%</h3>
+              </div>
+              <p className='text-green-800 text-xl'>Your carbon footprint is slighty below average!</p>
+            </div>
           </div>
           <div className="w-4/12 border ">
             Leaderboard
