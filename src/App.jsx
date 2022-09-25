@@ -2,7 +2,7 @@ import LandingPage from './pages/LandingPage'
 import {Route,Routes} from 'react-router-dom'
 import GreenForm from './pages/GreenForm'
 import Navbar from './components/Navbar'
-
+import Dashboard from './pages/Dashboard';
 
 function App() {
   
@@ -14,7 +14,7 @@ function App() {
         <Routes>
           <Route path='/' element={<LandingPage/>}/>
           <Route path='/form' element={<GreenForm />} />
-          <Route path='/dashboard' />
+          <Route path='/dashboard' element={<Dashboard />} />
         </Routes>
 
     </main>
