@@ -9,7 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@googlemaps/react-wrapper": "^1.1.35",
     "canvasjs-react-charts": "^1.0.5",
     "chart.js": "^3.9.1",
     "faker": "^5.5.3",
